@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Colors</title>
 </head>
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <script></script>
+    <div onclick="changeColor(this)" class="color" id="div1">Нажми</div>
+    <div onclick="changeColor(this)" class="color" id="div2">Нажми</div>
+    <div onclick="changeColor(this)" class="color" id="div3">Нажми</div>
+    <script>
+        function changeColor(sender) {
+            let div1 = document.getElementById('div1').style.backgroundColor = #6286FD;
+            let div2 = document.getElementById('div2').style.backgrondColor = #FD62F8;
+            let div3 = document.getElementById('div3').style.backgroundColor = #62FDD9;
+        }
+    </script>
 </body>
 </html>

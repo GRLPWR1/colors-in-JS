@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    ". div1 ."
+    "div2 . div3";
+    background-color: #FCFEA2;
+    color: #FFFFFF;
+    font-family: Poppins, Roboto, sans-serif;
+    font-size: 3em;
+}
+.color {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+#div1 {
+    grid-area: div1;
+    background-color: #A2FED2;
+}
+#div2 {
+    grid-area: div2;
+    background-color: #A4A2FE;
+}
+#div3 {
+    grid-area: div3;
+    background-color: #FEA2CE;
+}
